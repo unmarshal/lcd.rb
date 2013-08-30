@@ -38,6 +38,9 @@ To add an alias, `acd <alias>`. This will create an alias to the current working
 	$ pwd
 	/tmp
 
+To delete an alias: `dcd <alias>`.
+
+
 ## Installation
 
   1. Run `install.sh`
