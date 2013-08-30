@@ -1,0 +1,20 @@
+acd() {
+  $LCD/lcd.rb -a $1
+}
+lcd() {
+  cd "`$LCD/lcd.rb -l $1`"
+}
+pcd() {
+  $LCD/lcd.rb -p
+}
+dcd() {
+  $LCD/lcd.rb -d $1
+}
+lcp() {
+  $LCD/lcd.rb -c $@
+}
+lmv() {
+  $LCD/lcd.rb -m $@
+}
+
+
