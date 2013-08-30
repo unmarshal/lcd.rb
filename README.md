@@ -42,7 +42,7 @@ To add an alias, `acd <alias>`. This will create an alias to the current working
 
   1. Run `install.sh`
   2. Reload your .bashrc `. ~/.bashrc`
-  3. Smile, knowing that you are saving mental energy and accumulated time having to remember and type out long directory paths.
-  
+  3. Smile, knowing that you are saving mental energy and accumulated time not having to remember and type out long directory paths.
+
 -
 ##### Questions or Suggestions send to Marshall Beddoe <unmarshal@gmail.com>
