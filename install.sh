@@ -1,5 +1,6 @@
 #!/bin/sh
 
+touch ~/.lcdrc
 echo "export LCD=`pwd`" >> ~/.lcd
 cat bash-aliases >> ~/.lcd
 echo "source ~/.lcd" >> ~/.bashrc
