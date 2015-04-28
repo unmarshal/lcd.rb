@@ -5,7 +5,7 @@ FOUND=$?
 
 if [ $FOUND -ne 0 ]; then
   touch ~/.lcdrc
-  echo "export LCD=`pwd`" >> ~/.lcd
+  echo "export LCD=`pwd`" > ~/.lcd
   cat bash-aliases >> ~/.lcd
   echo "source ~/.lcd" >> ~/.bashrc
   source ~/.lcd
