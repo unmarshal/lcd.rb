@@ -38,8 +38,13 @@ class LCD
     when "-a"
       name = args[1]
       path = Dir.pwd
-      lcd.aliases[name] = path
-      lcd.write_lcdrc
+
+      if not lcd.aliases.has_key? name
+        lcd.aliases[name] = path
+        lcd.write_lcdrc
+      else
+        puts "Directory alias `#{name}` already exists"
+      end
     when "-c"
       args.shift
       # replace any standalone argument that matches an alias with the path
@@ -64,8 +69,13 @@ class LCD
       system("mv #{args.join(" ")}")
     when "-d"
       name = args[1]
-      lcd.aliases.delete name
-      lcd.write_lcdrc
+
+      if lcd.aliases.has_key? name
+        lcd.aliases.delete name
+        lcd.write_lcdrc
+      else
+        puts "Directory alias for `#{name}` does not exist"
+      end
     when "-l"
       name = args[1]
       if lcd.aliases.has_key? name
