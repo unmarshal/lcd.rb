@@ -46,6 +46,3 @@ To delete an alias: `dcd <alias>`.
   1. Run `install.sh`
   2. Reload your .bashrc `. ~/.bashrc`
   3. Smile, knowing that you are saving mental energy and accumulated time not having to remember and type out long directory paths.
-
--
-##### Questions or Suggestions send to Marshall Beddoe <unmarshal@gmail.com>
